@@ -794,7 +794,9 @@ h3 {
 }
 .project-list {
   display: block;
-  transition: background .2s, transform .2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 .project-list:hover {
   background: #fff7f4;
@@ -806,13 +808,16 @@ h3 {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 25px;
+  z-index: 10;
 }
 .word-swipe-links a {
   padding: 9px 13px;
-  border: 1px solid rgba(255,255,255,.45);
-  font-size: .88rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  font-size: 0.88rem;
   font-weight: 700;
-  transition: background .2s, color .2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 .word-swipe-links a:hover {
   background: #fff;
@@ -823,7 +828,7 @@ h3 {
     position: fixed;
     inset: var(--header) 0 0;
     z-index: 9;
-    background: rgba(23,36,58,.36);
+    background: rgba(23, 36, 58, 0.36);
     backdrop-filter: blur(5px);
   }
   .menu-backdrop.open {
